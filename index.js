@@ -1,5 +1,4 @@
-//javascriptpro_
-//initial reference        
+// initial reference        
 let musicImage = document.querySelector('.container .image-box img');
 let songName = document.querySelector('.container .pre-container .song-name');
 let artistName = document.querySelector('.container .pre-container .artist-name');
@@ -15,12 +14,29 @@ let pauseIcon = document.querySelector('.container .btns .play-pause-btn .fa-pau
 let music = document.querySelector('#music');
 
 let musicIndex = 1;
-let loadMusic =(musicIndex)=>{
- musicImage.src = `${allmusic[musicIndex - 1].img}.jpg`;    
- music.src = `${allmusic[musicIndex - 1].src}.mp3`;
- songName.innerHTML = `${allmusic[musicIndex - 1].name}`;
- artistName.innerHTML = `${allmusic[musicIndex - 1].artist}`;
+let loadMusic = (musicIndex) => {
+    musicImage.src = `${allmusic[musicIndex - 1].img}.jpg`;    
+    music.src = `${allmusic[musicIndex - 1].src}.mp3`;
+    songName.innerHTML = `${allmusic[musicIndex - 1].name}`;
+    artistName.innerHTML = `${allmusic[musicIndex - 1].artist}`;
 }
+
+// Function to play next song
+function playNextSong() {
+    musicIndex++;
+    musicIndex > allmusic.length ? musicIndex = 1 : musicIndex = musicIndex;
+    progressBar.style.width = '0px';
+    if(playPauseBtn.classList.contains('play')) {
+        playPauseBtn.classList.remove('play');
+        pauseIcon.style.display = 'block';
+        playIcon.style.display = 'none';
+    }
+    loadMusic(musicIndex);
+    music.play();
+}
+
+// play next song when the current song ends
+music.addEventListener('ended', playNextSong);
 
 //play pause audio
 playPauseBtn.addEventListener('click',()=>{

@@ -1,167 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-margin:0;    
-padding:0;
-box-sizing:border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-background: olivedrab;  
-font-family: 'poppins', sans-serif;
+body {
+    background: olivedrab;
+    font-family: 'poppins', sans-serif;
 }
 
-.container{
-padding:30px;
-height: 250px;
-width:300px;
-background: olivedrab;
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
+.container {
+    padding: 30px;
+    height: 250px;
+    width: 300px;
+    background: olivedrab;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .container:hover {
     border: 2px solid lightblue;
-    border-radius:  22px;
-}
-.image-box img{
-height:250px; 
-width: 250px;
-position:absolute;
-top:25%;
-left:50%;
-transform:translate(-50%,-50%);
-border-radius: 22px;
-z-index: 2;
+    border-radius: 22px;
 }
 
-.pre-container{
-height:200px;   
-width:100%;
-background: rgba(255, 255, 255, 0.1);
-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-backdrop-filter: blur(30px);
--webkit-backdrop-filter: blur(30px);
-border-top:1px solid rgba(255, 255, 255, 0.5);
-border-bottom-left-radius:7px;
-border-bottom-right-radius:7px;
-position:absolute;
-left:0;
-margin-top:75px;
-overflow:hidden;
+.image-box img {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 22px;
+    z-index: 2;
 }
 
-.container .pre-container .progress-area{
-height:16px;  
-width:100%;
-position:absolute;
-bottom:0;
-border-bottom-left-radius:7px;
-border-bottom-right-radius:7px;
-background: white;
-cursor:pointer;
+.pre-container {
+    height: 200px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    position: absolute;
+    left: 0;
+    margin-top: 75px;
+    overflow: hidden;
 }
 
-.container .pre-container .progress-area .progress-bar{
-height:16px; 
-width:0%;
-background: olivedrab;
-border-bottom-left-radius:7px;
-cursor:pointer;
+.container .pre-container .progress-area {
+    height: 16px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background: white;
+    cursor: pointer;
 }
 
-.container .pre-container .progress-area .curr-time{
-position:absolute;
-color:#E8F7FA;
-margin-top:-24px;
-margin-left:17px;
-font-size:14px;
-font-weight:300;
-}   
-
-.container .pre-container .progress-area .total-time{
-position:absolute; 
-color:#E8F7FA;
-margin-top:-24px;
-position:absolute;
-right:17px;
-font-size:14px;
-font-weight:300;
+.container .pre-container .progress-area .progress-bar {
+    height: 16px;
+    width: 0%;
+    background: olivedrab;
+    border-bottom-left-radius: 7px;
+    cursor: pointer;
 }
 
-.container .pre-container .song-name{
-font-weight:400;
-margin-top:75px;
-text-align:center;
-color: lightblue;
-font-size:19px;
-letter-spacing:1px;
-z-index: 5;
+.container .pre-container .progress-area .curr-time {
+    position: absolute;
+    color: #E8F7FA;
+    margin-top: -24px;
+    margin-left: 17px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
-.artist-name{
-font-weight:300;
-margin-top:5px;
-text-align:center;
-color: lightblue;
-font-size:12px;  
-letter-spacing:1px;
-z-index: 1;
+.container .pre-container .progress-area .total-time {
+    position: absolute;
+    color: #E8F7FA;
+    margin-top: -24px;
+    position: absolute;
+    right: 17px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
-.btns{
+.container .pre-container .song-name {
+    font-weight: 400;
+    margin-top: 75px;
+    text-align: center;
+    color: lightblue;
+    font-size: 19px;
+    letter-spacing: 1px;
+    z-index: 5;
+}
+
+.artist-name {
+    font-weight: 300;
+    margin-top: 5px;
+    text-align: center;
+    color: lightblue;
+    font-size: 12px;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.btns {
     position: relative;
     top: 5%;
     right: 10%;
-    /* left: -10px; */
-height:50px;    
-/* width:100%; */
-margin-top:-15px;
-/* display:flex;
-align-items:center; */
-display: flex; 
-justify-content: space-between; 
-align-items: center; 
-width: 150px;
+    height: 50px;
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
 }
 
- .play-pause-btn{
-height:55px;  
-width:55px;
-border-radius:50%;
-border:1px solid lightblue;
-display:flex;
-align-items:center;
-justify-content:center;
-color: lightblue;
-font-size:25px;
-position:absolute;
-/* left:50%; */
-right: -30%;
-top: -70%;
-/* transform:translate(-50%,-50%); */
-margin-top:40px;
-cursor:pointer;
+i:hover {
+    color: #0f0;
 }
 
-.container .pre-container .btns .play-pause-btn i{
-position:absolute;        
+
+.play-pause-btn {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightblue;
+    font-size: 25px;
+    position: absolute;
+    right: -30%;
+    top: -70%;
+    margin-top: 40px;
+    cursor: pointer;
 }
 
-.container .pre-container .btns .play-pause-btn .fa-pause{
-display:none;   
+.container .pre-container .btns .play-pause-btn i {
+    position: absolute;
 }
 
-.container .fa-backward-step,.container .fa-forward-step{
-color:#E8F7FA;   
-font: size 25px;
-margin-left:85px;
-margin-top: 10px;
-cursor:pointer;
+.container .pre-container .btns .play-pause-btn .fa-pause {
+    display: none;
 }
 
-.container .fa-forward-step{
-margin-left:138px;        
+.container .fa-backward-step,
+.container .fa-forward-step {
+    color: #E8F7FA;
+    font: size 25px;
+    margin-left: 85px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container .fa-forward-step {
+    margin-left: 138px;
 }

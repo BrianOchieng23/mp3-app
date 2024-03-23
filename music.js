@@ -47,6 +47,24 @@ let allmusic = [
     img: '/images/image8',
     src: '/music_playlist/music8'
   }
+  ,
+  {
+    name: 'Juicy',
+    artist: 'The Notorious B.I.G.',
+    img: '/images/image9',
+    src: '/music_playlist/music9'
+  }
+  ,
+  {
+    name: 'All My Life',
+    artist: '...',
+    img: '/images/image10',
+    src: '/music_playlist/music10'
+  },
+  {
+    name: 'No Role Modelz',
+    artist: 'J. Cole',
+    img: '/images/image11',
+    src: '/music_playlist/music11'
+  }
 ]
-
-//You can add more songs like this

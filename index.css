@@ -39,6 +39,7 @@ body {
     border-radius: 22px;
     z-index: 2;
 }
+
 img:hover {
     border: 3px solid #fff;
 }
